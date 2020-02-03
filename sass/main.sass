@@ -1,0 +1,289 @@
+@import "bourbon"
+@import "_var.sass"
+
+$main-color: #f39f18
+$headers-color: #2c3949
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+	
+.homesect
+	padding-top: 70px
+	background-color: #F9F9F9
+	position: relative    
+	text-align: center
+	.section-head	
+		margin-bottom: 70px
+	p 
+		margin-top: 20px
+		font-size: em(16px)
+		text-decoration: none
+		
+	h2
+		text-align: center
+		position: relative
+		&::after
+			position: absolute
+			content: ''
+			height: 4px
+			background-color: #f39f18
+			width: 180px
+			display: block
+			bottom: -20px
+			left: 50%
+			transform: translate(-50%, 0)
+	h3
+		text-align: center
+		margin-top: 50px
+	
+.section-bottom
+	background-color: #E5E5E5
+	padding: 50px 0
+	&::after
+		text-align: center
+		content: ''
+		height: 6px
+		position: absolute
+		width: 100%
+		top: -6px
+		background-image: url("/img/img_2/bah_1.png")
+		z-index: 2
+		top: -6px
+		left: 0
+
+.section-content
+	min-height: 300px
+
+.section_1
+	background-image: url("/img/img_2/s1_gray_bg.png")
+	background-repeat: no-repeat
+	background-position: bottom
+	padding-bottom: 0
+
+.s1-bottom-triangle
+	height: 98px
+	position: absolute
+	bottom: 0
+	background-image: url("/img/img2/tc_triangle.svg")
+	z-index: 2
+	width: 100%
+
+.triangle-logo
+	width: 100px
+	display: flex
+	margin-top: -210px
+	margin-left: 880px
+	color: #394B5F	
+
+.s1_bottom
+	padding: 15px 0 50spx
+	background-color: #394B5F
+	text-align: center
+	.info-item
+		margin: 10px 46px -14px
+		width: 100%
+		margin: 20px 0px 
+	.info-item-wrap:nth-child(2)
+		.info-item
+			margin-top: 100px
+p 
+	font-size: em(16px)
+	border-bottom: #DEE1E5 1px solid
+	padding-bottom: 0px
+		
+.info-item
+	padding-left: 34px
+	max-width: 264px
+	line-height: em(18px)
+	margin: 120px 42px
+	h4
+		margin-top: 0
+		margin-bottom: 10px
+		a
+			font-size: em(18px)
+			font-family: "PF Centro Slab Pro", $helvetica 
+			text-decoration: none
+			line-height: em(18px)
+			text-decoration: underline
+			color: #f39f18
+		p
+			font-size: em(14px)
+			line-height: em(10px)
+			
+.info-item-wrap
+	.info-item:nth-child(2)
+		margin-top: 0
+
+.scales
+	display: flex
+	width: 160px
+	margin-top: -250px
+	margin-left: 860px
+
+.no-margin
+	width: 100%
+
+.s2-items
+	padding-bottom: 70px
+	.s2-item
+		text-align: center
+		color: #111
+		margin-bottom: 75px
+		display: block
+		> span
+			display: block
+		&-text
+			font-family: "RalewayBald", $helvetica
+			margin-bottom: em(14px)
+			text-decoration: underline
+			line-height: em(24px)
+
+	.img-wrap
+		padding-bottom: 32px
+		display: block
+		margin-bottom: 15px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			height: 1px
+			background-color: #f39f18
+			width: 80px
+			bottom: 0 
+		img
+			max-width: 100px
+			max-height: 120px
+
+.img-wrap
+	img
+		width: 100%
+		max-width: 100%
+
+.s2-items-container
+		text-align: center
+.s2-item-wrap
+	display: inline-block
+	float: none
+	padding: 0 20px
+.s-dark
+	background-color: #2C3949
+	&:before
+	 background-image: url("/img/img_2/bah_2.png")
+
+.section-bottom
+	background-color: #394B5F
+
+.section_3
+	height: auto
+	h2
+		color: #fff
+	p
+			color: #fff
+			border-bottom: 0
+	.section-content
+		height: auto
+		background-image: url("/img/img_2/s3_sun_bg.png")
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		padding-bottom: 0
+	.info-item
+		margin-top: 84px
+		p
+	.s3-img-wrap
+		width: 130px
+		height: 130px
+		background-color: #f39f18
+		text-align: center
+		border-radius: 10em
+		margin: 91px 118px 57px 113px
+		img
+			width: 70px
+			margin-top: 29px
+
+	.info-item-wrap:nth-child(2) .info-item
+		margin-top: 80px
+	
+.s_gray
+	background-color: #E5E5E5
+	&::before
+		background-image: url("/img/img_2/bah_3.png")
+	.section-bottom
+		background-color: #D6D6D6
+	.section-pd
+		padding-bottom: 70px
+
+.cards
+	text-align: center
+	perspective: 600px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	.cadr
+		&-on
+			opacity: 1
+		&-off
+			transform: rotateY(100deg)
+			opacity: 0
+		transition: all 1s ease
+		width: 280px
+		display: inline-block
+		background-color: #2C3949
+		margin: 0 12px
+		color: #97a4b2
+		font-size: em(16px)
+		line-height: 22px
+		padding: 54px 28px 48px
+		
+		h4
+			color: #E5E5E5
+			font-family: "Raleway Bold", $helvetica
+		p
+			font-size: em(16px)
+			width: 100% 
+			strong
+				font-family: "Raleway Bold", $helvetica
+				color: #f39f18
+		.card-icon
+			width: 120px
+			height: 120px
+			display: inline-block
+			background-color:  #f39f18
+			border-radius: 10em
+			position: relative
+			img
+				width: 80px
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+			
+
+				
+			display: inline-block
+
+
+
+
+
+//ALWAYS END
+@import "_media.sass"
