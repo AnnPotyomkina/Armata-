@@ -258,8 +258,9 @@ p {
   flex-direction: row;
   justify-content: space-between; }
 
-.cards .cadr {
-  transition: all 1s ease;
+.cards .card {
+  opacity: 0;
+  transition: all 1.5s ease;
   width: 280px;
   display: inline-block;
   background-color: #2C3949;
@@ -269,26 +270,22 @@ p {
   line-height: 22px;
   padding: 54px 28px 48px; }
 
-.cards .cadr-on {
+.cards .card.card-visible {
   opacity: 1; }
 
-.cards .cadr-off {
-  transform: rotateY(100deg);
-  opacity: 0; }
-
-.cards .cadr h4 {
+.cards .card h4 {
   color: #E5E5E5;
   font-family: "Raleway Bold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
-.cards .cadr p {
+.cards .card p {
   font-size: 1em;
   width: 100%; }
 
-.cards .cadr p strong {
+.cards .card p strong {
   font-family: "Raleway Bold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   color: #f39f18; }
 
-.cards .cadr .card-icon {
+.cards .card .card-icon {
   width: 120px;
   height: 120px;
   display: inline-block;
@@ -297,7 +294,7 @@ p {
   position: relative;
   display: inline-block; }
 
-.cards .cadr .card-icon img {
+.cards .card .card-icon img {
   width: 80px;
   position: absolute;
   top: 50%;

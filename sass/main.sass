@@ -238,13 +238,9 @@ p
 	display: flex
 	flex-direction: row
 	justify-content: space-between
-	.cadr
-		&-on
-			opacity: 1
-		&-off
-			transform: rotateY(100deg)
-			opacity: 0
-		transition: all 1s ease
+	.card
+		opacity: 0
+		transition: all 1.5s ease
 		width: 280px
 		display: inline-block
 		background-color: #2C3949
@@ -253,6 +249,8 @@ p
 		font-size: em(16px)
 		line-height: 22px
 		padding: 54px 28px 48px
+		&.card-visible
+			opacity: 1
 		
 		h4
 			color: #E5E5E5
