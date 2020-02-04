@@ -268,10 +268,14 @@ p {
   color: #97a4b2;
   font-size: 1em;
   line-height: 22px;
-  padding: 54px 28px 48px; }
+  padding: 54px 28px 48px;
+  transform: rotateY(100deg);
+  transition: 1.5s; }
 
 .cards .card.card-visible {
-  opacity: 1; }
+  opacity: 1;
+  transform: rotateY(0deg);
+  transition: 1.5s; }
 
 .cards .card h4 {
   color: #E5E5E5;
@@ -291,8 +295,7 @@ p {
   display: inline-block;
   background-color: #f39f18;
   border-radius: 10em;
-  position: relative;
-  display: inline-block; }
+  position: relative; }
 
 .cards .card .card-icon img {
   width: 80px;
@@ -300,6 +303,96 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.section_5 {
+  width: 100%;
+  height: auto;
+  background-color: #243343; }
+
+.top-title {
+  width: 100%; }
+
+h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-transition: uppercase;
+  font-family: "Raleway Bold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 2.5em; }
+
+.section_5 {
+  text-align: center;
+  left: 50%; }
+
+.section_5 h2 {
+  color: #fff;
+  font-size: 2.5em;
+  padding: 60px 0 30px;
+  position: relative; }
+
+.section_5 h2::after {
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: #f39f18;
+  vertical-align: center;
+  width: 180px;
+  display: block;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 10em; }
+
+.triangals-container {
+  width: 100%;
+  height: auto;
+  color: #fff;
+  font-size: 1em;
+  font-family: "PFCentroSlabProMedium", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  text-align: center;
+  padding: 40px;
+  padding-bottom: 30px; }
+
+.triangals-container .tc-item {
+  width: 290px;
+  height: 128px;
+  display: inline-block;
+  position: relative;
+  margin-right: -44px; }
+
+.triangals-container .tc-item svg {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  direction: inline-block; }
+
+.triangals-container .tc-item svg path {
+  stroke-dashoffset: 1851;
+  stroke-dasharray: 260 1000;
+  transition: 1s;
+  stroke-width: 5px; }
+
+.triangals-container .tc-item svg path.active {
+  stroke-dashoffset: 0; }
+
+.triangals-container .tc-item .tc-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -55%);
+  width: 65%; }
+
+.triangals-container .tc-item .tc-content p {
+  text-align: left;
+  border-bottom: none;
+  margin-left: 5px; }
+
+.triangals-container .tc-item .tc-content img {
+  width: 38px; }
 
 /*==========  Desktop First Method  ==========*/
 .trans {

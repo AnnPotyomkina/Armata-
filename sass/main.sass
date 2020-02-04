@@ -249,8 +249,12 @@ p
 		font-size: em(16px)
 		line-height: 22px
 		padding: 54px 28px 48px
+		transform: rotateY(100deg)
+		transition: 1.5s
 		&.card-visible
 			opacity: 1
+			transform: rotateY(0deg)
+			transition: 1.5s
 		
 		h4
 			color: #E5E5E5
@@ -274,14 +278,92 @@ p
 				top: 50%
 				left: 50%
 				transform: translate(-50%, -50%)
+
+.section_5
+	width: 100%
+	height: auto
+	background-color: #243343
+	
+.top-title
+	width: 100%
+h2	
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-around
+	text-transition: uppercase
+	font-family: "Raleway Bold", $helvetica
+	font-size: em(40px)
+
+.section_5	
+	h2
+		color: #fff
+		font-size: em(40px)
+		padding: 60px 0 30px
+		position: relative
+		&::after
+			position: absolute
+			content: ''
+			width: 80px
+			height: 4px
+			background-color: #f39f18 
+			vertical-align: center
+			width: 180px
+			display: block
+			bottom: 0px
+			left: 50%
+			transform: translate(-50%, 0)
+			border-radius: 10em
+	.buttons
+	text-align: center
+	left: 50%
+
+.triangals-container
+	width: 100%
+	height: auto
+	color: #fff	
+	font-size: em(16px)
+	font-family: "PFCentroSlabProMedium", $helvetica
+	// display: flex
+	// flex-direction: row
+	// justify-content: center
+	text-align: center
+	padding: 40px
+	padding-bottom: 30px
+	.tc-item
+		width: 290px
+		height: 128px
+		display: inline-block
+		position: relative
+		margin-right: -44px
+		svg
+			top: 0
+			left: 0
+			z-index: 1	
+			direction: inline-block
+			path
+				stroke-dashoffset: 1851
+				stroke-dasharray: 260 1000
+				transition: 1s
+				stroke-width: 5px
+				&.active
+					stroke-dashoffset: 0
+		.tc-content
+			position: absolute
+			display: flex
+			align-items: center
+			top: 50%
+			left: 55%
+			transform: translate(-50%, -55%)
+			width: 65%
+			p
+				text-align: left
+				border-bottom: none
+				margin-left: 5px
+			img
+				width: 38px
 			
-
-				
-			display: inline-block
-
-
-
-
-
+		
+	
 //ALWAYS END
 @import "_media.sass"
