@@ -10,7 +10,7 @@
         "each-async": "^1.1.1",
         "express": "^4.17.1",
         "glob": "^7.1.4",
-        "gulp": "^3.9.1",
+        "gulp": "^4.0.2",
         "gulp-autoprefixer": "^7.0.0",
         "gulp-express": "^0.3.5",
         "gulp-minify-css": "^1.2.4",
